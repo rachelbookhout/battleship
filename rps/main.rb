@@ -1,4 +1,4 @@
-require 'gosu
+require 'gosu'
 
 class Game < Gosu::Window
 
@@ -7,6 +7,12 @@ class Game < Gosu::Window
 
   def initialize
     super(SCREEN_WIDTH, SCREEN_HEIGHT, false)
+  end
+
+  def draw
+  end
+
+  def update
   end
 
 end
