@@ -8,7 +8,7 @@ class Game < Gosu::Window
   def initialize
     super(SCREEN_WIDTH, SCREEN_HEIGHT, false)
     @background = Gosu::Image.new(self, 'img/background.png')
-
+    @large_font = Gosu::Font.new(self, "Futura", SCREEN_HEIGHT / 20)
   end
 
   def draw
