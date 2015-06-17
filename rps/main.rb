@@ -7,9 +7,12 @@ class Game < Gosu::Window
 
   def initialize
     super(SCREEN_WIDTH, SCREEN_HEIGHT, false)
+    @background = Gosu::Image.new(self, 'img/background.png')
+
   end
 
   def draw
+   @background.draw(0,0,0)
   end
 
   def update
