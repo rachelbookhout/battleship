@@ -13,11 +13,16 @@ class Game < Gosu::Window
 
   def draw
    @background.draw(0,0,0)
+    draw_text(80, 170, "Players Ship", @large_font, 0xffffd700)
+    draw_text(650, 170, "Computers Ship", @large_font, 0xffffd700)
   end
 
   def update
   end
 
+  def draw_text(x, y, text, font, color)
+  font.draw(text, x, y, 3, 1, 1, color)
+  end
 end
 
 Game.new.show
